@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  calc-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    environment:
+      - CALC_PORT=8888

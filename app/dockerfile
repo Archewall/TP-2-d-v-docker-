@@ -1,0 +1,9 @@
+FROM python:3.8
+
+WORKDIR /app
+
+COPY calc.py /app/
+
+ENV CALC_PORT=8888
+
+ENTRYPOINT ["python3", "calc.py"]
